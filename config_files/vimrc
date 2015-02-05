@@ -1,0 +1,26 @@
+"~/.vimrc
+
+set number
+"set relativenumber
+":map <Up> :set relativenumber <CR>
+":map <Down> :set number <CR>
+
+colorscheme torte 
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set statusline=%F%m%r%h%w[[%L]][%{&ff}]%y[[%p%%]][%04l,%04v]
+set showmatch " show matching brackets
+"set listchars=tab:>-,trail:- " show tabs and trailing 
+"set cursorcolumn " highlight the current column          
+"set cursorline " highlight current line
+set incsearch " BUT do highlight as you type you search phrase 
+set ignorecase " case insensitive by default
+set ruler " show column number and line number
+syntax on
+set lines=49
+set co=120
+set hls!
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
